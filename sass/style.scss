@@ -1,0 +1,108 @@
+@import "_base";
+
+
+main{
+    background-color: white;
+    width:80%;
+    margin-top: 10%;
+    margin:0 auto;
+    border-radius: 0.4rem;
+    @media only screen and (min-width: 600px) {
+        width:50%;
+    }
+  
+}
+h2{
+  
+    margin-top: 5%;
+    font-size: 20px;
+}
+header{
+    align-items: center;
+    padding:8%;
+    p{
+        color: gray;
+        font-size: 13px;
+        margin-top: 8%;
+        line-height: 1.5rem;
+    }
+    h2{
+        color: $color-cyan; // Add missing Sass variable
+    }
+    h3{
+        color: $color-bright-yellow; // Add missing Sass variable
+        margin-top:8%;
+        font-size: 16px;
+    }
+}
+
+article{
+    background-color: $color-cyan; // Add missing Sass variable
+    align-items: center;
+    padding:8%;
+  
+    p{
+        margin-top:8%;
+    }
+    button{
+        background-color: $color-bright-yellow; // Add missing Sass variable
+        color: white;
+        font-size: 16px;
+        width: 100%;
+        margin-top:10%;
+        border: 0;
+        border-radius: 0.5rem;
+        padding: 6% 8%;
+    }
+    .price-row{
+        display: flex;
+        align-items: center;
+    }
+    .price{
+   
+        margin-left: 5%;
+        color: $color-light-gray; // Add missing Sass variable  
+        display: inline-block;    
+    }
+    .price-value{
+        font-size: 32px;
+        font-weight: 700;
+        color: white;
+        display: block;
+    }
+   
+}
+
+footer{
+    background-color:#4abebd;
+    align-items: center;
+    padding:5%;
+    @media only screen and (min-width: 600px) {
+        display: inline-block;
+    }
+    p{
+        margin-top: 5%;
+        width: 70%;
+        color: $color-light-gray; // Add missing Sass variable
+    }
+  
+}
+
+@media (min-width: 1440px) { 
+    main{
+        width: 40%;
+        margin-top: 10vh;
+    }
+    .content-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .content-container > article, 
+    .content-container > footer {
+      flex: 1; /* Allows the <article> and <footer> to fill the available space equally */
+      /* Add margin or padding as necessary for spacing */
+    }
+  
+  }

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: Karla, sans-serif;
+  font-weight: 400;
+  background-color: hsl(204, 43%, 93%);
+  color: white;
+  width: 100%;
+  min-height: 100%;
+}
+
+main {
+  background-color: white;
+  width: 80%;
+  margin-top: 10%;
+  margin: 0 auto;
+  border-radius: 0.4rem;
+}
+@media only screen and (min-width: 600px) {
+  main {
+    width: 50%;
+  }
+}
+
+h2 {
+  margin-top: 5%;
+  font-size: 20px;
+}
+
+header {
+  align-items: center;
+  padding: 8%;
+}
+header p {
+  color: gray;
+  font-size: 13px;
+  margin-top: 8%;
+  line-height: 1.5rem;
+}
+header h2 {
+  color: hsl(179, 62%, 43%);
+}
+header h3 {
+  color: hsl(71, 73%, 54%);
+  margin-top: 8%;
+  font-size: 16px;
+}
+
+article {
+  background-color: hsl(179, 62%, 43%);
+  align-items: center;
+  padding: 8%;
+}
+article p {
+  margin-top: 8%;
+}
+article button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10%;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 6% 8%;
+}
+article .price-row {
+  display: flex;
+  align-items: center;
+}
+article .price {
+  margin-left: 5%;
+  color: hsl(204, 43%, 93%);
+  display: inline-block;
+}
+article .price-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  display: block;
+}
+
+footer {
+  background-color: #4abebd;
+  align-items: center;
+  padding: 5%;
+}
+@media only screen and (min-width: 600px) {
+  footer {
+    display: inline-block;
+  }
+}
+footer p {
+  margin-top: 5%;
+  width: 70%;
+  color: hsl(204, 43%, 93%);
+}
+
+@media (min-width: 1440px) {
+  main {
+    width: 40%;
+    margin-top: 10vh;
+  }
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .content-container > article,
+  .content-container > footer {
+    flex: 1; /* Allows the <article> and <footer> to fill the available space equally */
+    /* Add margin or padding as necessary for spacing */
+  }
+}/*# sourceMappingURL=style.css.map */
